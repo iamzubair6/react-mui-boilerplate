@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "next",
+    "prettier"
+  ],
+  "parserOptions": {
+    "project": "./jsconfig.json"
+  },
+  "rules": {
+    "react/jsx-props-no-spreading": "off",
+    "no-nested-ternary": "off",
+    "arrow-body-style": [
+      "error",
+      "as-needed",
+      {
+        "requireReturnForObjectLiteral": true
+      }
+    ],
+    "react/function-component-definition": [
+      1,
+      {
+        "namedComponents": "arrow-function"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "jsconfig": {
+        "config": "jsconfig.json"
+      }
+    }
+  }
+}
